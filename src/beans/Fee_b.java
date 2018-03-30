@@ -6,6 +6,8 @@ public class Fee_b {
 	private FloatProperty amount;
 	private StringProperty startdate;
 	private StringProperty enddate;
+	//private string umer;
+	
 	public final FloatProperty amountProperty() {
 		return this.amount;
 	}
