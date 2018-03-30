@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="OoadProject.jnlp">
+  <information>
+    <title>OoadProject</title>
+    <vendor>Umer</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="OoadProject.jar" size="52396" download="eager" />
+    <jar href="lib\mysql-connector-java-5.0.7.jar" size="536609" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="OoadProject" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="ooadproject.OoadProject"  name="OoadProject" />
+  <update check="always"/>
+</jnlp>

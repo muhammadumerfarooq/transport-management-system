@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="745.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ShowBusController">
+  <tabs>
+    <Tab fx:id="tabpane" text="ADD NEW BUS">
+      <content>
+        <AnchorPane fx:id="anchorpane1" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Pane fx:id="pane1" layoutX="119.0" layoutY="120.0" prefHeight="393.0" prefWidth="481.0">
+                     <children>
+                        <Label layoutX="70.0" layoutY="69.0" text="BUS ID" />
+                        <Label layoutX="70.0" layoutY="131.0" text="CHASIS NUMBER" />
+                        <TextField fx:id="busid1_t" layoutX="208.0" layoutY="65.0" />
+                        <TextField fx:id="cno1_t" layoutX="208.0" layoutY="127.0" />
+                        <ButtonBar fx:id="buttonbar1" layoutX="75.0" layoutY="303.0" prefHeight="40.0" prefWidth="355.0">
+                          <buttons>
+                              <Button fx:id="back1" mnemonicParsing="false" onAction="#action_back" prefHeight="28.0" text="BACK TO MAIN MENU" textFill="#008948">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Button>
+                            <Button fx:id="save" mnemonicParsing="false" onAction="#action_adddriver" prefHeight="28.0" text="SAVE" textFill="#008948">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font></Button>
+                          </buttons>
+                        </ButtonBar>
+                        <Label layoutX="75.0" layoutY="190.0" text="DRIVER ID" />
+                        <Label layoutX="75.0" layoutY="236.0" text="ROUTE ID" />
+                        <TextField fx:id="driverid" layoutX="208.0" layoutY="186.0" />
+                        <TextField fx:id="routeidt" layoutX="199.0" layoutY="239.0" />
+                     </children>
+                  </Pane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

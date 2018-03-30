@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane prefHeight="600.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Menucontroller">
+   <children>
+      <BorderPane>
+         <center>
+            <Pane prefHeight="600.0" prefWidth="745.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="mainmenulabel" layoutX="217.0" layoutY="41.0" prefHeight="28.0" prefWidth="295.0" text="WELCOME TO MAIN MENU">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="256.0" layoutY="146.0" prefHeight="305.0" prefWidth="179.0">
+                     <children>
+                        <Button fx:id="managecustomerbutton" layoutY="7.0" mnemonicParsing="false" onAction="#action_cust" prefHeight="29.0" prefWidth="178.0" text="MANAGE CUSTOMER" textFill="#008948">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="managedriverbutton" layoutX="-1.0" layoutY="68.0" mnemonicParsing="false" onAction="#action_driver" prefHeight="29.0" prefWidth="180.0" text="MANAGE DRIVER" textFill="#008948">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="manageroutebutton" layoutY="138.0" mnemonicParsing="false" onAction="#action_route" prefHeight="29.0" prefWidth="179.0" text="MANAGE ROUTE" textFill="#008948">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="managebusbutton" layoutY="209.0" mnemonicParsing="false" onAction="#action_bus" prefHeight="29.0" prefWidth="179.0" text="MANAGE BUS" textFill="#008948">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="signout" layoutX="629.0" layoutY="40.0" mnemonicParsing="false" onAction="#action_signout" prefHeight="29.0" prefWidth="102.0" text="SIGNOUT" textFill="#008948">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Button>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</FlowPane>
