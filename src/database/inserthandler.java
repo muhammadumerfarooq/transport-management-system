@@ -17,6 +17,7 @@ public inserthandler()
 	
 }
 
+
 public boolean insertcustomer(int personid,Customer c) throws ClassNotFoundException, InstantiationException, IllegalAccessException
 {
 	boolean isinserted;

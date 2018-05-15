@@ -14,6 +14,7 @@ public MySqlConnection()
 	this.statement=null;
 	this.res=null;
 }
+
 public static Connection connect()
 {
 	try {
@@ -23,6 +24,7 @@ public static Connection connect()
 		conn = DriverManager.getConnection("jdbc:mysql://" + "localhost"
 				+ ":" + 3306 + "/" +"ooadproject", "root","root");
 		//statement=conn.createStatement();
+                
 		System.out.println("Connection achieved...");
 
 		return conn;
